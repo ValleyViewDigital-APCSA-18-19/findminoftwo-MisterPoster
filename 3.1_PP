@@ -1,0 +1,40 @@
+import java.util.*;
+
+public class CSA_WORK
+{ //start of CSA_PROJECTS
+   /*
+        Name: Samuel Sparenga
+        Title: 3.1
+        Date: 10/03/2018
+   */   
+    public static void main(String args[]) 
+    { //start of Main
+        
+        int num1, num2, holder = 0;
+        
+        Scanner kb = new Scanner(System.in);
+        
+        System.out.print("Enter your first number: ");
+        num1 = kb.nextInt();
+        
+        System.out.print("Enter your second number: ");
+        num2 = kb.nextInt();
+        
+        if(num1 > num2)
+        {
+          holder = num2;
+          num2 = num1;
+          num1 = holder;
+        }
+        else 
+        {
+          num1 = num1;
+          num2 = num2;
+        }
+         
+        System.out.println("New number 1: " + num1);
+        System.out.println("New number 2: " + num2);
+         
+    } //end of Main
+
+} //end of CSA_WORK
